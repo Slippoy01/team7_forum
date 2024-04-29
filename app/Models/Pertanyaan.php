@@ -13,14 +13,14 @@ class Pertanyaan extends Model
 
     protected $table = "pertanyaan";
     protected $fillable = [
-        'judul',
-        'slug',
-        'tag',
-        'deskripsi',
-        'gambar',
-        'publik',
+        'judul', 
+        'slug', 
+        'tag', 
+        'deskripsi', 
+        'gambar', 
+        'publik', 
 
-        'kategori_id',
+        'kategori_id', 
         'user_id',
 
         'stat_publikasi',
