@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TopikController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('home');
 });
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Route::post('/home/data', [HomeController::class, 'data'])->name('home.data');
+Route::get('/home/search/{nama}', [HomeController::class, 'search'])->name('kategori.search');
