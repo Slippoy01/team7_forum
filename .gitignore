@@ -1,7 +1,5 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+team7_forum/vendor/
+team7_forum/node_modules/
 team7_forum/package-lock.json
 team7_forum/composer.lock
 team7_forum/storage/image-topik/*
