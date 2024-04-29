@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 @empty
-                    Gak ada apa apa dek
+                    No Data
                 @endforelse
 
                 <nav>
@@ -46,79 +46,4 @@
     </div>
 @endsection
 
-{{-- @push('scripts-js')
-    <script src="{{ asset('adminlte3/plugins/datatables/jquery.dataTables.js') }}"></script>
-    <script src="{{ asset('adminlte3/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
-    <script>
-        $(function() {
-            var tableMain = '';
 
-            tableMain = $('#main-table').DataTable({
-                processing: true,
-                serverSide: true,
-                pagingType: 'numbers',
-                lengthMenu: [
-                    [10, 25, 50, 100],
-                    [10, 25, 50, 100]
-                ],
-                columns: [{
-                        "data": "judul",
-                        render: function(data, type, row) {
-                            return row.link_judul
-                        },
-
-                    },
-                    {
-                        "data": "kategori.nama",
-                        render: function(data, type, row) {
-                            return row.link_kategori
-                        },
-                    },
-                    {
-                        "data": "countjawaban.jml",
-                        render: function(data, type, row) {
-                            if(data){
-                                return data;
-                            }else{
-                                return 0;
-                            }
-                        },
-                        "className": 'text-center'
-                    },
-                    {
-                        "data": "waktu_publikasi",
-                        render: function(data, type, row) {
-                            return moment(data, "YYYY-MM-DD HH:mm:ss").fromNow();
-                        },
-                        "className": 'text-center'
-                    },
-                ],
-                order: [
-                    [0, "asc"]
-                ],
-                ajax: {
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    beforeSend: function() {
-                        if (tableMain.hasOwnProperty('settings')) {
-                            tableMain.settings()[0].jqXHR.abort();
-                        }
-                    },
-                    url: "{{ url('home/data') }}",
-                    method: 'POST'
-                },
-                oLanguage: {
-                    "sLengthMenu": "_MENU_",
-                    "sZeroRecords": "No Data!",
-                    "sProcessing": "Please wait.",
-                    "sInfo": "_START_ - _END_ / _TOTAL_",
-                    "sInfoFiltered": "",
-                    "sInfoEmpty": "0 - 0 / 0",
-                    "infoFiltered": "(_MAX_)",
-                }
-            });
-        });
-    </script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css" />
-@endpush --}}

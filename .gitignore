@@ -1,6 +1,10 @@
-Final-Project/package-lock.json
-Final-Project/composer.lock
-Final-Project/storage/image-topik/*
-!Final-Project/storage/image-topik/index.html
-Final-Project/public/image-topik/*
-!Final-Project/public/image-topik/index.html
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+team7_forum/package-lock.json
+team7_forum/composer.lock
+team7_forum/storage/image-topik/*
+!team7_forum/storage/image-topik/index.html
+team7_forum/public/image-topik/*
+!team7_forum/public/image-topik/index.html
