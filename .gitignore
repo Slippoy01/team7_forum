@@ -1,0 +1,6 @@
+Final-Project/package-lock.json
+Final-Project/composer.lock
+Final-Project/storage/image-topik/*
+!Final-Project/storage/image-topik/index.html
+Final-Project/public/image-topik/*
+!Final-Project/public/image-topik/index.html
