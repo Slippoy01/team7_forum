@@ -9,10 +9,11 @@ Tema Project:
 Forum Diskusi
 
 ERD:
-https://gofile.me/7jihj/lt57qapRO
+![ERD](https://github.com/Slippoy01/team7_forum/assets/154108668/8e325d04-4ede-4a65-914e-73839df00f28)
+
 
 Link Production:
 https://aitisii.me/team7_forum/public/home
 
 Link Video Demo:
-https://gofile.me/7jihj/xv3kcEh3a
+http://quickconnect.to/MyITCServer/vs/sharing/N32NjsPx#!bW92aWUtMQ==
